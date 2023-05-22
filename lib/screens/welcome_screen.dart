@@ -29,18 +29,15 @@ class WelcomeScreen extends StatelessWidget{
                 letterSpacing: 1,
               ),),
               SizedBox(height: 80,),
-              InkWell(
-                splashColor: Colors.black,
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
-                },
-                child: Ink(
+              Material(
+                color: Color(0xFFE57734),
+                borderRadius: BorderRadius.circular(10),
+                child: InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                  },
                   child: Container(
                     padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
-                    decoration: BoxDecoration(
-                      color: Color(0xFFE57734),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
                     child: Text("Get Start", style: TextStyle(
                       color: Colors.white,
                       fontSize: 22,
