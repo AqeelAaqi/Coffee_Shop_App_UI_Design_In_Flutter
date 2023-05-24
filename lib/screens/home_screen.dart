@@ -1,6 +1,7 @@
 import 'package:coffee_shop_app_ui_design_in_flutter/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:coffee_shop_app_ui_design_in_flutter/widgets/items_widget.dart';
+import 'package:coffee_shop_app_ui_design_in_flutter/home_bottom_bar/home_bottom_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -130,6 +131,7 @@ class _HomeScreen extends State<HomeScreen>
           ),
         ),
       ),
+      bottomNavigationBar: HomeBottomBar(),
     );
   }
 }
